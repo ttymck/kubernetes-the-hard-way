@@ -1,0 +1,7 @@
+vpc:
+    name: k8s-vpc-1
+subnet:
+    name: k8s-subnet-1
+external-ip:
+    name: k8s-ip-1
+    value: 35.197.63.215

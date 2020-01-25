@@ -1,0 +1,5 @@
+tmck-debian devel/kubernetes-the-hard-way ‹master*› » gcloud compute addresses list --filter="name=('k8s-vpc-1')"              
+Listed 0 items.
+tmck-debian devel/kubernetes-the-hard-way ‹master*› » gcloud compute addresses list --filter="name=('k8s-ip-1')" 
+NAME      ADDRESS/RANGE  TYPE      PURPOSE  NETWORK  REGION    SUBNET  STATUS
+k8s-ip-1  35.197.63.215  EXTERNAL                    us-west1          RESERVED

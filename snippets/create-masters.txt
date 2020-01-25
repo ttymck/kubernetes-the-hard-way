@@ -1,0 +1,42 @@
+tmck-debian devel/kubernetes-the-hard-way ‹master*› » source create-controllers.sh
+NOTE: The users will be charged for public IPs when VMs are created.
+Instance creation in progress for [master-0]: https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/zones/us-west1-c/operations/operation-1571362119292-5952540ef175c-3e4d31ac-f4276e98
+Use [gcloud compute operations describe URI] command to check the status of the operation(s).
+NOTE: The users will be charged for public IPs when VMs are created.
+Instance creation in progress for [master-1]: https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/zones/us-west1-c/operations/operation-1571362122357-59525411dda32-aca21f36-582ac255
+Use [gcloud compute operations describe URI] command to check the status of the operation(s).
+NOTE: The users will be charged for public IPs when VMs are created.
+Instance creation in progress for [master-2]: https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/zones/us-west1-c/operations/operation-1571362124416-59525413d442e-a96c6088-fd1c3030
+Use [gcloud compute operations describe URI] command to check the status of the operation(s).
+tmck-debian devel/kubernetes-the-hard-way ‹master*› » gcloud compute operations describe https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/zones/us-west1-c/operations/operation-1571362119292-5952540ef175c-3e4d31ac-f4276e98
+endTime: '2019-10-17T18:29:00.274-07:00'
+error:
+  errors:
+  - code: IP_IN_USE_BY_ANOTHER_RESOURCE
+    message: "IP '10.0.0.0' is already being used by another resource. "
+httpErrorMessage: CONFLICT
+httpErrorStatusCode: 409
+id: '1404121435139779495'
+insertTime: '2019-10-17T18:28:41.050-07:00'
+kind: compute#operation
+name: operation-1571362119292-5952540ef175c-3e4d31ac-f4276e98
+operationType: insert
+progress: 100
+selfLink: https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/zones/us-west1-c/operations/operation-1571362119292-5952540ef175c-3e4d31ac-f4276e98
+startTime: '2019-10-17T18:28:41.053-07:00'
+status: DONE
+targetId: '5525433758729415592'
+targetLink: https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/zones/us-west1-c/instances/master-0
+user: tyler@havercene.io
+warnings:
+- code: DISK_SIZE_LARGER_THAN_IMAGE_SIZE
+  data:
+  - key: disk_size_gb
+    value: '200'
+  - key: image_size_gb
+    value: '10'
+  message: "Disk size: '200 GB' is larger than image size: '10 GB'. You might need\
+    \ to resize the root repartition manually if the operating system does not support\
+    \ automatic resizing. See https://cloud.google.com/compute/docs/disks/add-persistent-disk#resize_pd\
+    \ for details."
+zone: https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/zones/us-west1-c

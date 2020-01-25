@@ -1,0 +1,10 @@
+tmck-debian devel/kubernetes-the-hard-way ‹master*› » source create-nodes.sh
+NOTE: The users will be charged for public IPs when VMs are created.
+Instance creation in progress for [node-0]: https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/zones/us-west1-c/operations/operation-1571362605305-595255de70fd9-1fb3ce12-3df138e1
+Use [gcloud compute operations describe URI] command to check the status of the operation(s).
+NOTE: The users will be charged for public IPs when VMs are created.
+Instance creation in progress for [node-1]: https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/zones/us-west1-c/operations/operation-1571362607660-595255e0afc23-ea4a5d02-e9926589
+Use [gcloud compute operations describe URI] command to check the status of the operation(s).
+NOTE: The users will be charged for public IPs when VMs are created.
+Instance creation in progress for [node-2]: https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/zones/us-west1-c/operations/operation-1571362614890-595255e794f60-e29013a9-fe60bf70
+Use [gcloud compute operations describe URI] command to check the status of the operation(s).

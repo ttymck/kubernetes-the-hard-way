@@ -1,0 +1,5 @@
+tmck-debian devel/kubernetes-the-hard-way ‹master*› » gcloud compute firewall-rules create k8s-allow-external --allow tcp:22,tcp:6443,icmp --network k8s-vpc-1 --source-ranges 0.0.0.0/0
+Creating firewall...⠛Created [https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/global/firewalls/k8s-allow-external].
+Creating firewall...done.                                                                        
+NAME                NETWORK    DIRECTION  PRIORITY  ALLOW                 DENY  DISABLED
+k8s-allow-external  k8s-vpc-1  INGRESS    1000      tcp:22,tcp:6443,icmp        False

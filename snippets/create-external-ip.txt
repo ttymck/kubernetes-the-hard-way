@@ -1,0 +1,2 @@
+tmck-debian devel/kubernetes-the-hard-way ‹master*› » gcloud compute addresses create k8s-ip-1 --region $(gcloud config get-value compute/region)
+Created [https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/regions/us-west1/addresses/k8s-ip-1].

@@ -1,0 +1,66 @@
+tmck-debian devel/kubernetes-the-hard-way ‹master*› » gcloud compute ssh master-0
+WARNING: The public SSH key file for gcloud does not exist.
+WARNING: The private SSH key file for gcloud does not exist.
+WARNING: You do not have an SSH key for gcloud.
+WARNING: SSH keygen will be executed to generate a key.
+Generating public/private rsa key pair.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/tmck/.ssh/google_compute_engine.
+Your public key has been saved in /home/tmck/.ssh/google_compute_engine.pub.
+The key fingerprint is:
+SHA256:qNk3XkvTqcIVGOhDsgEOjWCmWaV8/WG2x67wv1OP7o8 tmck@tmck-debian
+The key's randomart image is:
++---[RSA 2048]----+
+|+=oo.  .         |
+|=*..o.o .        |
+|o + .*. +o       |
+|   .. o=.+.      |
+|      ..S o.     |
+|     +   o....   |
+|    o o.o.=.oo   |
+|       =o=.+...  |
+|        +o==E..  |
++----[SHA256]-----+
+Updating project ssh metadata...⠧Updated [https://www.googleapis.com/compute/v1/projects/k8s-thw-256201].
+Updating project ssh metadata...done.                                                            
+Waiting for SSH key to propagate.
+Warning: Permanently added 'compute.1256624265261000944' (ECDSA) to the list of known hosts.
+Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 4.15.0-1044-gcp x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Fri Oct 18 01:38:19 UTC 2019
+
+  System load:  0.06               Processes:           89
+  Usage of /:   0.6% of 193.66GB   Users logged in:     0
+  Memory usage: 6%                 IP address for ens4: 10.0.1.0
+  Swap usage:   0%
+
+
+0 packages can be updated.
+0 updates are security updates.
+
+
+tmck@master-0:~$ ifconfig
+ens4: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1460
+        inet 10.0.1.0  netmask 255.255.255.255  broadcast 0.0.0.0
+        inet6 fe80::4001:aff:fe00:100  prefixlen 64  scopeid 0x20<link>
+        ether 42:01:0a:00:01:00  txqueuelen 1000  (Ethernet)
+        RX packets 426  bytes 592704 (592.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 430  bytes 52923 (52.9 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 112  bytes 10732 (10.7 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 112  bytes 10732 (10.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+tmck@master-0:~$ 

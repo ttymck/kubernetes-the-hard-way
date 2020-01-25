@@ -1,0 +1,12 @@
+tmck-debian devel/kubernetes-the-hard-way ‹master› » gcloud compute networks create k8s-vpc-1 --subnet-mode custom
+Created [https://www.googleapis.com/compute/v1/projects/k8s-thw-256201/global/networks/k8s-vpc-1].
+NAME       SUBNET_MODE  BGP_ROUTING_MODE  IPV4_RANGE  GATEWAY_IPV4
+k8s-vpc-1  CUSTOM       REGIONAL
+
+Instances on this network will not be reachable until firewall rules
+are created. As an example, you can allow all internal traffic between
+instances as well as SSH, RDP, and ICMP by running:
+
+$ gcloud compute firewall-rules create <FIREWALL_NAME> --network k8s-vpc-1 --allow tcp,udp,icmp --source-ranges <IP_RANGE>
+$ gcloud compute firewall-rules create <FIREWALL_NAME> --network k8s-vpc-1 --allow tcp:22,tcp:3389,icmp
+
